@@ -9,4 +9,7 @@ export default {
 </script>
 
 <style lang="sass" scoped>
+  h1 
+    color: blue
+
 </style>
