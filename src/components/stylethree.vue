@@ -1,5 +1,12 @@
 <template lang="html">
-  <h1>{{ content.title }}</h1>
+  <div>
+    <h1>{{ content.title }}</h1>
+    <p>{{ content.ingress }}</p>
+    <p>{{ content.bodyTxt }}</p>
+    <p>{{ content.endTxt }}</p>
+    <p>{{ content.contact }}</p>
+    <p>{{ content.adress }}</p>
+  </div>
 </template>
 
 <script>
@@ -9,7 +16,7 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-  h1 
+  h1, p
     color: blue
 
 </style>
