@@ -1,6 +1,6 @@
 <template lang="html">
-  <div id="app">
-    <router-view></router-view>
+  <div id="portfolio">
+    YOYOYO
   </div>
 </template>
 
@@ -9,5 +9,5 @@ export default {
 }
 </script>
 
-<style lang="sass">
+<style lang="sass" scoped>
 </style>
