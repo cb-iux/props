@@ -12,17 +12,21 @@ import styleone from '../components/styleone'
 import styletwo from '../components/styletwo'
 import stylethree from '../components/stylethree'
 
+const components = {
+  'appStyleone': styleone,
+  'appStyletwo': styletwo,
+  'appStylethree': stylethree
+}
+// Get imported components into an array
+const compToArray = Object.keys(components)
+
 export default {
-  components: {
-    'appStyleone': styleone,
-    'appStyletwo': styletwo,
-    'appStylethree': stylethree
-  },
+  components,
   data () {
     return {
       content: {
         index: 1,
-        styles: 4,
+        styles: compToArray.length,
         title: 'Christoffer Bogsti',
         ingress: 'Frontend-utvikler med bakgrunn fra grafisk design',
         bodyTxt: 'Studerte grafisk design ved Høyskolen Kristiania og har en bachelorgrad i design og web-utvikling fra Deakin University i Australia. Har jobbet som designer i Cappelen Damm forlag og vunnet pris for beste eBok app på Årets vakreste Bøker.',
@@ -31,6 +35,9 @@ export default {
         adress: 'post@christofferbogsti.com'
       }
     }
+  },
+  created () {
+    console.log(this.content.styles)
   },
   methods: {
     // when logo button is clicked
